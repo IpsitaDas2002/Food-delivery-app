@@ -37,11 +37,11 @@
     margin: 10px 0px;
 }
 .food-item-img-container{
-    position:relative
+    position: relative;
 }
 .food-item-img-container .add{
-    width: 35px;
     position: absolute;
+    width:35px;
     bottom: 15px;
     right: 15px;
     cursor: pointer;
