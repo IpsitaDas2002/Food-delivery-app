@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets'
 
 const Add = () => {
   return (
-    <div className='add'>
+    <div className="add">
         <form className="flex-col">
             <div className="add-img-upload flex-col">
                 <p>Upload Image</p>
@@ -24,7 +24,7 @@ const Add = () => {
             <div className="add-category-price">
                 <div className="add-category flex-col">
                     <p>Product category</p>
-                    <select name="name">
+                    <select name="category">
                         <option value="Salad">Salad</option>
                         <option value="Rolls">Rolls</option>
                         <option value="Deserts">Deserts</option>
@@ -35,7 +35,12 @@ const Add = () => {
                         <option value="Noodles">Noodles</option>
                     </select>
                 </div>
+                <div className="add-price flex-col">
+                    <p>Product price</p>
+                    <input type="Number" name="price" placeholder='$20' />
+                </div>
             </div>
+            <button type='submit' className='add-btn'>ADD</button>
         </form>
     </div>
   )
